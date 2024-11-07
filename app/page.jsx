@@ -3,7 +3,9 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div>
-      <h1>Hello World!</h1>
+      {/* Hero Section */}
+
+      <section className="bg-[#C4342B] h-screen"></section>
     </div>
   );
 }
