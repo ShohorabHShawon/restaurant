@@ -93,7 +93,7 @@ const FoodMenuSlider = () => {
       >
         {foodItems.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center justify-center text-center mb-10 p-4 bg-white rounded-lg shadow-md h-full">
+            <div className="flex flex-col items-center justify-center text-center mb-24 p-4 bg-white rounded-lg shadow-md h-full">
               <div className="flex justify-center items-center w-full h-48">
                 <Image
                   src={item.image}
@@ -103,7 +103,7 @@ const FoodMenuSlider = () => {
                   className="object-contain"
                 />
               </div>
-              <hr class="w-20 h-2 mx-auto my-4 bg-red-600 border-0" />
+              <hr className="w-20 h-2 mx-auto my-4 bg-red-600 border-0" />
               <h3 className="text-lg font-bold mt-4">{item.title}</h3>
               <p className="text-sm text-gray-600">{item.description}</p>
             </div>

@@ -21,9 +21,7 @@ export default function TabSection() {
               repellendus minima maiores perspiciatis mollitia deleniti aliquam
               placeat dolor voluptatum reprehenderit labore eligendi magni
               aspernatur sed! Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Natus laborum dolores, debitis ab fuga odit
-              dignissimos sit ut repudiandae eum eaque quam adipisci quis porro
-              commodi asperiores aliquid magni quaerat?
+              adipisicing elit. Natus laborum dolores
             </p>
 
             <div className="flex justify-start items-center">
@@ -45,7 +43,7 @@ export default function TabSection() {
       case 'Experience':
         return (
           <div>
-            <h1 className="text-2xl font-bold text-black mb-2 uppercase">
+            <h1 className="text-4xl font-bold text-black mb-2 uppercase">
               Experience
             </h1>
             <p className="text-black">
@@ -64,7 +62,7 @@ export default function TabSection() {
       case 'Contact':
         return (
           <div>
-            <h1 className="text-2xl font-bold text-black mb-2 uppercase">
+            <h1 className="text-4xl font-bold text-black mb-2 uppercase">
               Contact
             </h1>
             <p className="text-black">
@@ -74,9 +72,7 @@ export default function TabSection() {
               commodi repellat quod in aliquid temporibus ab? Necessitatibus
               tenetur commodi, minus illo quae nesciunt doloremque placeat!
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-              laboriosam consequatur asperiores? Repudiandae itaque mollitia
-              quis autem dolorem earum velit repellat. Nisi ex quos perferendis
-              corrupti vel laudantium dolores aperiam!
+              laboriosam consequatur
             </p>
           </div>
         );
@@ -86,7 +82,7 @@ export default function TabSection() {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-6 md:mt-0 lg:mt-0 md:px-4 lg:px-6">
+    <div className="max-w-xl mx-auto mt-6 md:mt-6 lg:mt-0 md:px-4 lg:px-6">
       {/* Tab buttons */}
       <div className="flex justify-start items-start space-x-4 mb-4 border-b border-[#BD1F17]">
         {['About', 'Experience', 'Contact'].map((tab) => (
