@@ -10,8 +10,8 @@ export default function TabSection() {
     switch (activeTab) {
       case 'About':
         return (
-          <div>
-            <h1 className="text-4xl font-bold text-black mb-2 uppercase">
+          <div className="">
+            <h1 className="text-4xl font-bold text-black mb-4 uppercase">
               Exceptional culinary experience and delicious food
             </h1>
             <p className="text-black">
@@ -86,7 +86,7 @@ export default function TabSection() {
   };
 
   return (
-    <div className="max-w-xl mx-auto pb-6 px-6">
+    <div className="max-w-xl mx-auto mt-6 md:mt-0 lg:mt-0 md:px-4 lg:px-6">
       {/* Tab buttons */}
       <div className="flex justify-start items-start space-x-4 mb-4 border-b border-[#BD1F17]">
         {['About', 'Experience', 'Contact'].map((tab) => (

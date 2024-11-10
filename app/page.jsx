@@ -4,7 +4,7 @@ import TabSection from '@/components/TabSection';
 import { MdDeliveryDining } from 'react-icons/md';
 import { FaAward } from 'react-icons/fa';
 import { PiShoppingBagOpenFill } from 'react-icons/pi';
-import ReservationForm from '@/components/ReservationForm';
+import FoodMenuSlider from '@/components/FoodMenuSlider';
 
 export default function Home() {
   return (
@@ -55,9 +55,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center mb-20">
+        {/* 3 icons */}
+        <div className="flex justify-center items-center mb-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-black gap-4 max-w-7xl w-full">
-            <div className="flex flex-row items-center space-x-4">
+            <div className="flex items-center space-x-4 ml-8">
               <MdDeliveryDining className="shadow-lg rounded-full p-6 text-8xl text-[#BD1F17]" />
               <div className="text-left">
                 <h1 className="text-2xl font-bold text-black px-2">
@@ -66,7 +67,7 @@ export default function Home() {
                 <p className="px-2">Within 30 Minutes</p>
               </div>
             </div>
-            <div className="flex flex-row items-center space-x-4">
+            <div className="flex items-center space-x-4 ml-8">
               <FaAward className="shadow-lg rounded-full p-6 text-8xl text-[#BD1F17]" />
               <div className="text-left">
                 <h1 className="text-2xl font-bold text-black px-2">
@@ -75,7 +76,7 @@ export default function Home() {
                 <p className="px-2">Best buffet restaurant</p>
               </div>
             </div>
-            <div className="flex flex-row items-center space-x-4">
+            <div className="flex items-center space-x-4 ml-8">
               <PiShoppingBagOpenFill className="shadow-lg rounded-full p-6 text-8xl text-[#BD1F17]" />
               <div className="text-left">
                 <h1 className="text-2xl font-bold text-black px-2">
@@ -91,27 +92,25 @@ export default function Home() {
       {/* Menu  */}
       <section id="menu" className="bg-[#FBF7F2]">
         <div className="flex justify-center items-center">
-          <div className="p-10 grid grid-cols-6 max-w-7xl">
-            <div className="col-span-2">
-              <p className="text-[#BD1F17] font-bold">
-                Crispy, Every Bite Taste
+          <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 max-w-7xl px-4">
+            <div className="col-span-1 sm:col-span-2 md:col-span-2">
+              <p className="text-[#BD1F17] font-bold text-center sm:text-left">
+                🍕 Crispy, Every Bite Taste
               </p>
-              <h1 className="text-4xl font-bold text-[#BD1F17] my-2">
+              <h1 className="text-3xl sm:text-4xl font-bold text-[#BD1F17] my-2 text-center sm:text-left">
                 POPULAR FOOD ITEMS
               </h1>
             </div>
           </div>
         </div>
-        <div className=" ">
-          <h1 className="text-3xl text-center font-bold py-10">
-            Our Food Menu
-          </h1>
+
+        <div className="m-5">
+          <FoodMenuSlider className="m-10 p-6" />
         </div>
       </section>
 
       {/* Contact  */}
       <section id="contact" className="">
-        <ReservationForm />
         <div></div>
       </section>
 
@@ -119,7 +118,7 @@ export default function Home() {
 
       {/* Footer  */}
       <footer className="bg-[#BD1F17] text-white text-center py-4">
-        <p>&copy; 2022 Restaurant</p>
+        <p>&copy; 2024 Restaurant</p>
       </footer>
     </div>
   );
