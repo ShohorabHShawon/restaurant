@@ -282,7 +282,7 @@ export default function Home() {
             {/* Text */}
             <div className="pt-8 px-8 col-span-1 flex flex-col justify-center space-y-4">
               <p className="font-medium text-xl text-wrap">
-                <span className="text-2xl">"</span>Lorem ipsum dolor sit amet
+                <span className="text-2xl"> " </span>Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Nihil alias repellat eius
                 doloribus eveniet nulla provident excepturi in soluta quibusdam
                 facilis molestiae sed nostrum, repudiandae atque ipsa suscipit

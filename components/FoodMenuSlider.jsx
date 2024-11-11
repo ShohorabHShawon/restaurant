@@ -105,7 +105,7 @@ const FoodMenuSlider = () => {
               </div>
               <hr className="w-20 h-2 mx-auto my-4 bg-red-600 border-0" />
               <h3 className="text-lg font-bold mt-4">{item.title}</h3>
-              <p className="text-sm text-gray-600">{item.description}</p>
+              <h5 className="text-sm text-gray-600">{item.description}</h5>
             </div>
           </SwiperSlide>
         ))}
