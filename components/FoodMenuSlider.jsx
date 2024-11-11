@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css/autoplay';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 
 const foodItems = [
@@ -18,70 +19,64 @@ const foodItems = [
     description: 'Juicy beef patty with cheddar, lettuce, and tomato.',
   },
   {
-    image: '/pizza.png',
-    title: 'Margherita Pizza',
-    description: 'Classic pizza with fresh tomatoes, mozzarella, and basil.',
+    image: '/wings.png',
+    title: 'Chicken Wings',
+    description: 'Juicy crispy chicken wings.',
   },
   {
-    image: '/burger.png',
-    title: 'Cheeseburger',
-    description: 'Juicy beef patty with cheddar, lettuce, and tomato.',
+    image: '/frenchfry.png',
+    title: 'French Fries',
+    description: 'Crispy and delicious French fries.',
   },
   {
-    image: '/pizza.png',
-    title: 'Margherita Pizza',
-    description: 'Classic pizza with fresh tomatoes, mozzarella, and basil.',
+    image: '/cake.png',
+    title: 'Chocolate Cake',
+    description: 'Delicious chocolate cake with cream.',
   },
   {
-    image: '/burger.png',
-    title: 'Cheeseburger',
-    description: 'Juicy beef patty with cheddar, lettuce, and tomato.',
+    image: '/honeywings.png',
+    title: 'Honey Wings',
+    description: 'Juicy crispy chicken wings with honey glaze.',
   },
   {
-    image: '/pizza.png',
-    title: 'Margherita Pizza',
-    description: 'Classic pizza with fresh tomatoes, mozzarella, and basil.',
+    image: '/sushi.png',
+    title: 'Sushi',
+    description: 'Delicious sushi with fresh fish and rice.',
   },
   {
-    image: '/burger.png',
-    title: 'Cheeseburger',
-    description: 'Juicy beef patty with cheddar, lettuce, and tomato.',
+    image: '/icecream.png',
+    title: 'Ice Cream',
+    description: 'Delicious ice cream with chocolate and nuts.',
   },
   {
-    image: '/pizza.png',
-    title: 'Margherita Pizza',
-    description: 'Classic pizza with fresh tomatoes, mozzarella, and basil.',
+    image: '/coffee.png',
+    title: 'Coffee',
+    description: 'Delicious coffee with cream and sugar.',
   },
   {
-    image: '/burger.png',
-    title: 'Cheeseburger',
-    description: 'Juicy beef patty with cheddar, lettuce, and tomato.',
+    image: '/chickenfry.png',
+    title: 'Chicken Fry',
+    description: 'Crispy and delicious fried chicken.',
   },
+  // Add more items as needed
 ];
 
 const FoodMenuSlider = () => {
   return (
     <div className="max-w-7xl mx-auto p-6">
       <Swiper
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Autoplay]}
         spaceBetween={20}
         slidesPerView={4}
         pagination={{ clickable: true }}
         navigation
+        autoplay={{ delay: 1000, disableOnInteraction: false }} // Autoplay with 3 seconds delay
         loop={true}
         breakpoints={{
-          320: {
-            slidesPerView: 1,
-          },
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
+          320: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
         }}
         style={{
           '--swiper-navigation-color': '#BD1F17',
@@ -105,7 +100,9 @@ const FoodMenuSlider = () => {
               </div>
               <hr className="w-20 h-2 mx-auto my-4 bg-red-600 border-0" />
               <h3 className="text-lg font-bold mt-4">{item.title}</h3>
-              <h5 className="text-sm text-gray-600">{item.description}</h5>
+              <h5 className="text-sm text-gray-600 line-clamp-1">
+                {item.description}
+              </h5>
             </div>
           </SwiperSlide>
         ))}
