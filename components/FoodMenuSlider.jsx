@@ -69,7 +69,7 @@ const FoodMenuSlider = () => {
         slidesPerView={4}
         pagination={{ clickable: true }}
         navigation
-        autoplay={{ delay: 1000, disableOnInteraction: false }} // Autoplay with 3 seconds delay
+        autoplay={{ delay: 1000, disableOnInteraction: false }}
         loop={true}
         breakpoints={{
           320: { slidesPerView: 1 },
