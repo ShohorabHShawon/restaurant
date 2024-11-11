@@ -9,7 +9,7 @@ function SocialMedia() {
       {/* Social Media Links */}
       <div className="flex justify-center gap-6 m-8 p-10 mx-10">
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/shohorab.swn/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-3xl hover:text-blue-700 border-2 rounded-full border-gray-400 p-4"
@@ -17,7 +17,7 @@ function SocialMedia() {
           <FaFacebookF />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/shohorabhshawon/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-3xl hover:text-blue-700 border-2 rounded-full border-gray-400 p-4"
@@ -25,7 +25,7 @@ function SocialMedia() {
           <FaLinkedinIn />
         </a>
         <a
-          href="https://twitter.com"
+          href="https://x.com/Shohorab_Swn"
           target="_blank"
           rel="noopener noreferrer"
           className="text-3xl hover:text-blue-700 border-2 rounded-full border-gray-400 p-4"

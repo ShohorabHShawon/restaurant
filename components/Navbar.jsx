@@ -23,22 +23,22 @@ function Navbar() {
             Restaurant
           </Link>
           <div className="space-x-6 hidden lg:flex">
-            <Link href="#home" className="text-md">
+            <Link href="#home" className="text-md hover:text-[#FEBF00]">
               Home
             </Link>
-            <Link href="#about" className="text-md">
+            <Link href="#about" className="text-md hover:text-[#FEBF00]">
               About
             </Link>
-            <Link href="#menu" className="text-md">
+            <Link href="#menu" className="text-md hover:text-[#FEBF00]">
               Menu
             </Link>
-            <Link href="#booking" className="text-md">
+            <Link href="#booking" className="text-md hover:text-[#FEBF00]">
               Book
             </Link>
-            <Link href="#review" className="text-md">
+            <Link href="#review" className="text-md hover:text-[#FEBF00]">
               Review
             </Link>
-            <Link href="#contact" className="text-md">
+            <Link href="#contact" className="text-md hover:text-[#FEBF00]">
               Contact
             </Link>
           </div>
@@ -73,7 +73,7 @@ function Navbar() {
       {isMenuOpen && (
         <div
           className="lg:hidden bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100
- text-white text-center space-y-4 py-6"
+ text-white text-center space-y-4 py-10"
         >
           <Link href="#home" className="block" onClick={closeMenu}>
             Home

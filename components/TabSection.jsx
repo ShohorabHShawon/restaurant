@@ -12,7 +12,7 @@ export default function TabSection() {
       case 'About':
         return (
           <div>
-            <h1 className="text-4xl font-bold text-black mb-4 uppercase">
+            <h1 className="text-4xl text-black mb-4 uppercase font-mono font-extrabold">
               Exceptional culinary experience and delicious food
             </h1>
             <p className="text-black">
@@ -41,7 +41,7 @@ export default function TabSection() {
       case 'Experience':
         return (
           <div>
-            <h1 className="text-4xl font-bold text-black mb-4 uppercase">
+            <h1 className="text-4xl font-bold text-black mb-4 uppercase font-mono">
               Experience
             </h1>
             <p className="text-black">
@@ -60,7 +60,7 @@ export default function TabSection() {
       case 'Contact':
         return (
           <div>
-            <h1 className="text-4xl font-bold text-black mb-4 uppercase">
+            <h1 className="text-4xl font-bold text-black mb-4 uppercase font-mono font-extrabold">
               Contact
             </h1>
             <p className="text-black">
@@ -90,7 +90,7 @@ export default function TabSection() {
             className={`py-2 px-4 transition-colors ${
               activeTab === tab
                 ? 'bg-[#BD1F17] text-white font-semibold'
-                : 'text-gray-900 hover:text-white'
+                : 'text-gray-900 hover:text-[#BD1F17]'
             }`}
           >
             {tab}

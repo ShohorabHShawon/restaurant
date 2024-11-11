@@ -10,6 +10,7 @@ import { MdOutlineWifiCalling3, MdEmail } from 'react-icons/md';
 import { IoLocation } from 'react-icons/io5';
 import BookingForm from '@/components/BookingForm';
 import SocialMedia from '@/components/SocialMedia';
+import Review from '@/components/Review';
 
 export default function Home() {
   return (
@@ -17,38 +18,42 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="bg-gradient-to-r from-[#BD1F17] to-[#A51D13] h-screen flex justify-center items-center mx-auto"
+        className="bg-gradient-to-r from-[#BD1F17] to-[#A51D13] h-screen flex justify-center items-center mx-auto overflow-hidden"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-6 max-w-7xl justify-center items-center overflow-hidden">
-          <div className="col-span-4 items-center text-center lg:text-start z-20">
+        <div className="grid grid-cols-1 lg:grid-cols-6 max-w-7xl justify-center items-center">
+          <div className="col-span-4 items-center text-center lg:text-start z-20 mb-6">
             <div>
-              <h1 className="text-white text-4xl sm:text-5xl md:text-[66px] lg:text-[76px] font-bold bg-[#BD1F17] bg-opacity-60">
+              <h1 className="font-mono font-black text-white text-6xl sm:text-5xl md:text-[66px] lg:text-[76px] bg-[#BD1F17] bg-opacity-60">
                 TASTE THE AUTHENTIC SAUDI CUISINE
               </h1>
-              <p className="text-white text-2xl my-9">
-                Among the best Saudi chefs in the world, serving you something
-                beyond flavor.
+              <p className="text-white text-xl sm:text-xl md:text-2xl lg:text-3xl my-9">
+                Among the best Saudi chefs in the world, <br /> serving you
+                something beyond flavor.
               </p>
-              <HeroSection />
+              <HeroSection className="" />
             </div>
           </div>
-          <div className="w-[300px] sm:w-[500px] lg:w-[900px] h-auto mx-auto">
+
+          {/* Main Image Container */}
+          <div className="relative w-[300px] sm:w-[500px] lg:w-[700px] h-auto mx-auto overflow-visible">
             <Image
               src="/hero.png"
               alt="Hero Image"
-              width={700}
-              height={700}
-              className="relative top-14 lg:top-0 lg:right-36 z-0"
+              width={600}
+              height={600}
+              className="w-full h-full object-contain z-0 lg:relative lg:right-56"
+            />
+
+            {/* Prop Image Positioned Absolutely */}
+            <Image
+              src="/off.svg"
+              alt="Prop Image"
+              width={150}
+              height={150}
+              className="absolute -bottom-2 -right-4 sm:-bottom-4 sm:-right-4 md:-bottom-6 md:-right-8 lg:-bottom-4 lg:right-48 w-16 sm:w-20 md:w-24 lg:w-28 z-20"
             />
           </div>
         </div>
-        <Image
-          src="/off.svg"
-          alt="Hero Image"
-          width={150}
-          height={150}
-          className="absolute top-[76%] sm:top-[82%] md:top-[80%] lg:top-[68%] right-8 sm:right-10 md:right-44 lg:right-72 z-20 w-20 sm:w-24 md:w-28 lg:w-32"
-        />
       </section>
 
       {/* About  */}
@@ -67,13 +72,25 @@ export default function Home() {
         <div className="flex justify-center items-center my-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl justify-center items-center">
             <div className="object-cover w-full h-full">
-              <Image
-                src="/about.png"
-                alt="Hero Image"
-                width={500}
-                height={500}
-                className="w-full"
-              />
+              {/* Main Image Container */}
+              <div className="relative">
+                <Image
+                  src="/about.png"
+                  alt="Hero Image"
+                  width={600}
+                  height={600}
+                  className="w-full h-full"
+                />
+
+                {/* Prop Image Positioned Absolutely */}
+                <Image
+                  src="/market.svg"
+                  alt="Prop Image"
+                  width={250}
+                  height={250}
+                  className="absolute -top-4 left-2 sm:-top-4 sm:left-4 md:-top-4 md:left-4 lg:-top-6 lg:left-6 w-40 sm:w-44 md:w-48 lg:w-60 z-20"
+                />
+              </div>
             </div>
             <div className="flex place-self-start">
               <TabSection />
@@ -86,7 +103,7 @@ export default function Home() {
             <div className="flex items-center space-x-4 ml-8">
               <MdDeliveryDining className="shadow-lg rounded-full p-6 text-8xl text-[#BD1F17]" />
               <div className="text-left">
-                <h1 className="text-2xl font-bold text-black px-2">
+                <h1 className="text-3xl text-black px-2 font-mono font-extrabold">
                   FAST DELIVERY
                 </h1>
                 <p className="px-2">Within 30 Minutes</p>
@@ -95,7 +112,7 @@ export default function Home() {
             <div className="flex items-center space-x-4 ml-8">
               <FaAward className="shadow-lg rounded-full p-6 text-8xl text-[#BD1F17]" />
               <div className="text-left">
-                <h1 className="text-2xl font-bold text-black px-2">
+                <h1 className="text-3xl text-black px-2 font-mono font-extrabold">
                   ABSOLUTE DINING
                 </h1>
                 <p className="px-2">Best buffet restaurant</p>
@@ -104,7 +121,7 @@ export default function Home() {
             <div className="flex items-center space-x-4 ml-8">
               <PiShoppingBagOpenFill className="shadow-lg rounded-full p-6 text-8xl text-[#BD1F17]" />
               <div className="text-left">
-                <h1 className="text-2xl font-bold text-black px-2">
+                <h1 className="text-3xl text-black px-2 font-mono font-extrabold">
                   PICKUP DELIVERY
                 </h1>
                 <p className="px-2">Grab your food order</p>
@@ -127,12 +144,12 @@ export default function Home() {
           />
         </div>
         <div className="flex justify-center items-center">
-          <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 max-w-7xl px-4">
+          <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 max-w-7xl">
             <div className="col-span-1 sm:col-span-2 md:col-span-2">
               <p className="text-[#BD1F17] font-bold text-center sm:text-left">
                 🍕 Crispy, Every Bite Taste
               </p>
-              <h1 className="text-3xl sm:text-4xl font-bold text-[#BD1F17] my-2 text-center sm:text-left">
+              <h1 className="text-3xl lg:text-4xl font-mono font-black text-black my-2 text-center sm:text-left ">
                 POPULAR FOOD ITEMS
               </h1>
             </div>
@@ -160,7 +177,7 @@ export default function Home() {
               <p className="text-[#BD1F17] font-bold text-lg sm:text-xl">
                 🍕 BOOK NOW
               </p>
-              <h1 className="text-2xl sm:text-4xl font-bold">
+              <h1 className="text-2xl sm:text-4xl font-mono font-black">
                 BOOK YOUR TABLE
               </h1>
               <p className="text-base sm:text-lg">
@@ -273,7 +290,7 @@ export default function Home() {
               <p className="text-[#BD1F17] font-bold text-center sm:text-left">
                 🍕 Crispy, Every Bite Taste
               </p>
-              <h1 className="uppercase text-3xl sm:text-4xl font-bold text-[#BD1F17] my-2 text-center sm:text-left">
+              <h1 className="uppercase text-3xl sm:text-4xl font-black text-black my-2 text-center sm:text-left font-mono">
                 What Some of my Customers Say
               </h1>
             </div>
@@ -282,42 +299,10 @@ export default function Home() {
 
         <div className="flex justify-center my-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 max-w-7xl justify-center items-center bg-[#FEBF00] bg-full">
-            {/* Text */}
-            <div className="pt-8 px-8 col-span-1 flex flex-col justify-center space-y-4">
-              <p className="font-medium text-xl text-wrap">
-                <span className="text-2xl"> " </span>Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Nihil alias repellat eius
-                doloribus eveniet nulla provident excepturi in soluta quibusdam
-                facilis molestiae sed nostrum, repudiandae atque ipsa suscipit
-                quo.
-              </p>
+            {/* Review */}
 
-              <div className="flex justify-between items-center pt-10">
-                <div>
-                  <h1 className="text-xl font-bold uppercase">
-                    Shohorab H Shawon
-                  </h1>
-                  <h2 className="font-medium">Uttara, Dhaka</h2>
-                </div>
-                <div className="">
-                  <Image
-                    src="/profile.jpg"
-                    alt="Hero Image"
-                    width={44}
-                    height={44}
-                    className="rounded-full"
-                  />
-                </div>
-              </div>
-
-              <div className="">
-                <div className="flex justify-end">
-                  <hr className="w-10 h-1 bg-red-700 border-0 " />
-                </div>
-                <div className="">
-                  <hr className="w-full h-0.5 mx-auto mb-4 bg-black border-0" />
-                </div>
-              </div>
+            <div>
+              <Review />
             </div>
 
             {/* Video */}
@@ -345,12 +330,12 @@ export default function Home() {
       {/* Footer  */}
       <section
         id="contact"
-        className="relative text-white text-center py-24 px-4 sm:px-6 lg:px-8 bg-[url('/formbg.png')] bg-cover bg-center"
+        className="relative text-white text-center py-24 px-4 sm:px-6 lg:px-8 bg-[url('/contactbg.png')] bg-cover bg-center"
       >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="absolute inset-0 bg-black opacity-80"></div>
 
         <div className="relative z-10">
-          <h1 className="text-3xl md:text-4xl font-semibold px-4 md:px-0 mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black font-mono px-4 md:px-0 mb-8">
             WE'RE READY TO GIVE YOU THE BEST DINING EXPERIENCE
           </h1>
 
