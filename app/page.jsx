@@ -5,6 +5,9 @@ import { MdDeliveryDining } from 'react-icons/md';
 import { FaAward } from 'react-icons/fa';
 import { PiShoppingBagOpenFill } from 'react-icons/pi';
 import FoodMenuSlider from '@/components/FoodMenuSlider';
+import { IoMdTime } from 'react-icons/io';
+import { MdOutlineWifiCalling3, MdEmail } from 'react-icons/md';
+import { IoLocation } from 'react-icons/io5';
 
 export default function Home() {
   return (
@@ -47,6 +50,15 @@ export default function Home() {
       <section id="about">
         <div className="flex justify-center items-center my-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl justify-center items-center">
+            <div className="absolute -right-80 hidden xl:block">
+              <Image
+                src="/cap2.png"
+                alt="Hero Image"
+                width={500}
+                height={500}
+                className=""
+              />
+            </div>
             <div className="object-cover w-full h-full">
               <Image
                 src="/about.png"
@@ -98,6 +110,15 @@ export default function Home() {
 
       {/* Menu  */}
       <section id="menu" className="bg-[#FBF7F2] py-20">
+        <div className="absolute -left-72 hidden xl:block">
+          <Image
+            src="/cap.png"
+            alt="Hero Image"
+            width={500}
+            height={500}
+            className=""
+          />
+        </div>
         <div className="flex justify-center items-center">
           <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 max-w-7xl px-4">
             <div className="col-span-1 sm:col-span-2 md:col-span-2">
@@ -117,12 +138,119 @@ export default function Home() {
       </section>
 
       {/* Contact Form  */}
-      <section id="contact" className="">
-        <div
-          className="w-full h-auto bg-cover bg-center"
-          style={{ backgroundImage: "url('/formbg.png')" }}
-        >
-          <div className="w-full h-full">{/* Your content here */}</div>
+      {/* Contact Form */}
+      <section
+        id="contact"
+        className="relative py-10 px-4 sm:px-6 lg:px-8 bg-[url('/formbg.png')] bg-cover bg-center"
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
+
+        {/* Form Container */}
+        <div className="relative flex justify-center md:justify-start items-center p-8 lg:p-14 z-20 max-w-7xl mx-auto">
+          <form className="bg-transparent p-6 w-full max-w-lg space-y-6 z-20">
+            {/* Title and Subtitle */}
+            <div className="text-white text-center md:text-left space-y-2">
+              <p className="text-[#BD1F17] font-bold text-lg sm:text-xl">
+                🍕 BOOK NOW
+              </p>
+              <h1 className="text-2xl sm:text-4xl font-bold">
+                BOOK YOUR TABLE
+              </h1>
+              <p className="text-base sm:text-lg">
+                We are always ready to serve you the best dining experience.
+              </p>
+            </div>
+
+            {/* Form Fields */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex-1">
+                <label className="block text-white text-sm mb-2" htmlFor="name">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="w-full bg-transparent border border-white text-white p-2 rounded focus:outline-none"
+                  placeholder="Your name"
+                />
+              </div>
+              <div className="flex-1">
+                <label
+                  className="block text-white text-sm mb-2"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="w-full bg-transparent border border-white text-white p-2 rounded focus:outline-none"
+                  placeholder="Your email"
+                />
+              </div>
+            </div>
+
+            {/* Reservation Date and Total People */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex-1">
+                <label
+                  className="block text-white text-sm mb-2"
+                  htmlFor="reservation-date"
+                >
+                  Reservation Date
+                </label>
+                <input
+                  type="date"
+                  id="reservation-date"
+                  name="reservationDate"
+                  className="w-full bg-transparent border border-white text-white p-2 rounded focus:outline-none"
+                />
+              </div>
+              <div className="flex-1">
+                <label
+                  className="block text-white text-sm mb-2"
+                  htmlFor="total-people"
+                >
+                  Total People
+                </label>
+                <input
+                  type="number"
+                  id="total-people"
+                  name="totalPeople"
+                  className="w-full bg-transparent border border-white text-white p-2 rounded focus:outline-none"
+                  placeholder="Number of people"
+                />
+              </div>
+            </div>
+
+            {/* Message */}
+            <div>
+              <label
+                className="block text-white text-sm mb-2"
+                htmlFor="message"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                className="w-full bg-transparent border border-white text-white p-2 rounded focus:outline-none"
+                placeholder="Your message"
+                rows="4"
+              ></textarea>
+            </div>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className="bg-[#FEBF00] text-black p-3 font-bold hover:bg-gray-200 transform duration-300 ease-in-out"
+            >
+              BOOK NOW
+            </button>
+          </form>
         </div>
       </section>
 
@@ -173,7 +301,7 @@ export default function Home() {
 
               <div className="">
                 <div className="flex justify-end">
-                  <hr className="w-12 h-1 bg-red-700 border-0 " />
+                  <hr className="w-10 h-1 bg-red-700 border-0 " />
                 </div>
                 <div className="">
                   <hr className="w-full h-0.5 mx-auto mb-4 bg-black border-0" />
@@ -204,9 +332,39 @@ export default function Home() {
       </section>
 
       {/* Footer  */}
-      <footer className="bg-[#BD1F17] text-white text-center py-4">
-        <p>&copy; 2024 Restaurant</p>
-      </footer>
+      <section className="bg-[#BD1F17] text-white text-center py-4" id="footer">
+        <h1 className="text-4xl font-semibold p-6 m-5">
+          WE READY TO HAVE YOU THE BEST DINING EXPERIENCES
+        </h1>
+        <div className="flex justify-center items-center">
+          <div>
+            <IoMdTime />
+            <h1>OPENING HOURS</h1>
+            <p>Monday-Sunday</p>
+            <p>9:00 AM to 11:30 PM</p>
+          </div>
+          <div>
+            <MdOutlineWifiCalling3 />
+            <h1>LET'S TALK</h1>
+            <p>Phone: +880181234567</p>
+            <p>Email: shohorabhahwon@gmail.com</p>
+          </div>
+          <div>
+            <MdEmail />
+            <h1>BOOK A TABLE</h1>
+            <p>Phone: +880181234567</p>
+            <p>Email: shohorabhahwon@gmail.com</p>
+          </div>
+          <div>
+            <IoLocation />
+            <h1>OUR ADDRESS</h1>
+            <p>Uttara, Dhaka</p>
+            <p>Sector 7</p>
+          </div>
+        </div>
+
+        <p className="text-xl">© 2021 All Rights Reserved</p>
+      </section>
     </div>
   );
 }
