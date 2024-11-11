@@ -15,7 +15,10 @@ export default function Home() {
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#BD1F17] to-[#A51D13] h-screen flex justify-center items-center mx-auto">
+      <section
+        id="home"
+        className="bg-gradient-to-r from-[#BD1F17] to-[#A51D13] h-screen flex justify-center items-center mx-auto"
+      >
         <div className="grid grid-cols-1 lg:grid-cols-6 max-w-7xl justify-center items-center overflow-hidden">
           <div className="col-span-4 items-center text-center lg:text-start z-20">
             <div>
@@ -143,7 +146,7 @@ export default function Home() {
 
       {/* Contact Form */}
       <section
-        id="contact"
+        id="booking"
         className="relative py-10 px-4 sm:px-6 lg:px-8 bg-[url('/formbg.png')] bg-cover bg-center"
       >
         {/* Overlay */}
@@ -253,7 +256,7 @@ export default function Home() {
       </section>
 
       {/* Review Section */}
-      <section id="menu" className="bg-[#FBF7F2] py-20">
+      <section id="review" className="bg-[#FBF7F2] py-20">
         {/* prop image 
         <div className="absolute right-32 hidden xl:block">
           <Image
@@ -340,7 +343,10 @@ export default function Home() {
       </section>
 
       {/* Footer  */}
-      <section className="relative text-white text-center py-24 px-4 sm:px-6 lg:px-8 bg-[url('/formbg.png')] bg-cover bg-center">
+      <section
+        id="contact"
+        className="relative text-white text-center py-24 px-4 sm:px-6 lg:px-8 bg-[url('/formbg.png')] bg-cover bg-center"
+      >
         <div className="absolute inset-0 bg-black opacity-60"></div>
 
         <div className="relative z-10">

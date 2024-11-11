@@ -1,42 +1,53 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <div className="fixed top-0 left-0 w-full z-50">
-      <nav className="flex justify-between items-center text-white max-w-7xl mx-auto px-6 py-6">
+    <div className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-[#BD1F17] to-[#A51D13]">
+      <nav className="flex justify-between items-center text-white max-w-7xl mx-auto px-4 py-2">
         <div className="flex items-center space-x-6">
           <Image src="/logo.svg" alt="Logo" width={50} height={50} />
-          <Link href="/" className="text-3xl font-bold">
+          <Link href="#" className="text-3xl font-bold">
             Restaurant
           </Link>
-
           <div className="space-x-6 hidden lg:flex">
-            <Link href="/" className="text-md">
+            <Link href="#home" className="text-md">
               Home
             </Link>
-            <Link href="/about" className="text-md">
+            <Link href="#about" className="text-md">
               About
             </Link>
-
-            <Link href="/menu" className="text-md">
+            <Link href="#menu" className="text-md">
               Menu
             </Link>
-            <Link href="/services" className="text-md">
-              Services
+            <Link href="#booking" className="text-md">
+              Book
             </Link>
-
-            <Link href="/contact" className="text-md">
+            <Link href="#review" className="text-md">
+              Review
+            </Link>
+            <Link href="#contact" className="text-md">
               Contact
             </Link>
           </div>
         </div>
-        <button>
+
+        <button onClick={toggleMenu} className="lg:hidden focus:outline-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-white lg:hidden"
+            className="h-6 w-6 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -49,10 +60,48 @@ function Navbar() {
             />
           </svg>
         </button>
-        <button className="bg-[#FEBF00] text-black font-bold px-4 py-2 hidden lg:flex">
+
+        <Link
+          href="#booking"
+          className="bg-[#FEBF00] text-black font-bold px-4 py-2 hidden lg:flex"
+        >
           BOOK A TABLE
-        </button>
+        </Link>
       </nav>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div
+          className="lg:hidden bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100
+ text-white text-center space-y-4 py-6"
+        >
+          <Link href="#home" className="block" onClick={closeMenu}>
+            Home
+          </Link>
+          <Link href="#about" className="block" onClick={closeMenu}>
+            About
+          </Link>
+          <Link href="#menu" className="block" onClick={closeMenu}>
+            Menu
+          </Link>
+          <Link href="#booking" className="block" onClick={closeMenu}>
+            Book
+          </Link>
+          <Link href="#review" className="block" onClick={closeMenu}>
+            Review
+          </Link>
+          <Link href="#contact" className="block" onClick={closeMenu}>
+            Contact
+          </Link>
+          <Link
+            href="#booking"
+            className="bg-[#FEBF00] text-black font-bold px-4 py-2 inline-block mt-4"
+            onClick={closeMenu}
+          >
+            BOOK A TABLE
+          </Link>
+        </div>
+      )}
     </div>
   );
 }
