@@ -1,6 +1,6 @@
 # Restaurant
 
-A modern restaurant website built with Next.js 15, styled with Tailwind CSS, and enhanced with Swiper for smooth, responsive sliders and React Icons for appealing iconography.
+A modern restaurant website built with the latest Next.js 15, styled with Tailwind CSS, and enhanced with Swiper for smooth, responsive sliders and React Icons for appealing iconography.
 
 ## Table of Contents
 
@@ -8,8 +8,8 @@ A modern restaurant website built with Next.js 15, styled with Tailwind CSS, and
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -50,24 +50,21 @@ Make sure you have the following tools installed:
 ### Installation
 
 1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/ShohorabHShawon/restaurant.git
-
-   ```
-
+ ```bash
+ git clone https://github.com/ShohorabHShawon/restaurant.git
+ ```
 2. Navigate to the Project Directory
-
-cd restaurant
-
+ ```bash
+ cd restaurant
+```
 3. Install Dependencies
-
-   npm install
-
+```bash
+ npm install
+```
 4. Run the Development Server
-
-   npm run dev
-
+```bash
+ npm run dev
+```
 5. Open http://localhost:3000 in your browser to see the application.
 
 ### Usage
