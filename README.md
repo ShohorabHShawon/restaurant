@@ -57,17 +57,17 @@ Make sure you have the following tools installed:
    ```
 
 2. Navigate to the Project Directory
-
+ ```bash
 cd restaurant
-
+```
 3. Install Dependencies
-
+ ```bash
    npm install
-
+```
 4. Run the Development Server
-
+ ```bash
    npm run dev
-
+```
 5. Open http://localhost:3000 in your browser to see the application.
 
 ### Usage
