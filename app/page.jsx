@@ -23,7 +23,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-6 max-w-7xl justify-center items-center">
           <div className="col-span-4 items-center text-center lg:text-start z-20 mb-6">
             <div>
-              <h1 className="font-mono font-black text-white text-6xl sm:text-5xl md:text-[66px] lg:text-[76px] bg-[#BD1F17] bg-opacity-60">
+              <h1 className="font-mono font-black text-white text-3xl sm:text-5xl md:text-[66px] lg:text-[78px] bg-[#BD1F17] bg-opacity-60">
                 TASTE THE AUTHENTIC SAUDI CUISINE
               </h1>
               <p className="text-white text-xl sm:text-xl md:text-2xl lg:text-3xl my-9">
