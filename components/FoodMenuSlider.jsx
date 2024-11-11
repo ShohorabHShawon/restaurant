@@ -58,7 +58,6 @@ const foodItems = [
     title: 'Chicken Fry',
     description: 'Crispy and delicious fried chicken.',
   },
-  // Add more items as needed
 ];
 
 const FoodMenuSlider = () => {
