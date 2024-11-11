@@ -51,19 +51,19 @@ Make sure you have the following tools installed:
 
 1. **Clone the Repository**
  ```bash
-   git clone https://github.com/ShohorabHShawon/restaurant.git
+ git clone https://github.com/ShohorabHShawon/restaurant.git
  ```
 2. Navigate to the Project Directory
  ```bash
-cd restaurant
+ cd restaurant
 ```
 3. Install Dependencies
 ```bash
-   npm install
+ npm install
 ```
 4. Run the Development Server
 ```bash
-   npm run dev
+ npm run dev
 ```
 5. Open http://localhost:3000 in your browser to see the application.
 
