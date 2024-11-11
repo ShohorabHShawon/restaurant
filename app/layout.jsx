@@ -1,10 +1,6 @@
 import localFont from 'next/font/local';
 import './globals.css';
 import Navbar from '@/components/Navbar';
-<style>
-  @import
-  url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-</style>;
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',

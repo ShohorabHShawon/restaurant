@@ -336,7 +336,7 @@ export default function Home() {
 
         <div className="relative z-10">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-black font-mono px-4 md:px-0 mb-8">
-            WE'RE READY TO GIVE YOU THE BEST DINING EXPERIENCE
+            WE ARE READY TO GIVE YOU THE BEST DINING EXPERIENCE
           </h1>
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 max-w-4xl mx-auto mb-8">
@@ -351,7 +351,7 @@ export default function Home() {
 
             <div className="flex flex-col items-center text-center space-y-2">
               <MdOutlineWifiCalling3 className="text-3xl md:text-4xl mb-1 text-[#FEBF00]" />
-              <h2 className="text-lg md:text-xl font-semibold">LET'S TALK</h2>
+              <h2 className="text-lg md:text-xl font-semibold">LETS TALK</h2>
               <p>Phone: +880181234567</p>
               <p>Email: shohorabhahwon@gmail.com</p>
             </div>
