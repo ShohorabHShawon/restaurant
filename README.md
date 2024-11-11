@@ -1,6 +1,6 @@
 # Restaurant
 
-A modern restaurant website built with Next.js 15, styled with Tailwind CSS, and enhanced with Swiper for smooth, responsive sliders and React Icons for appealing iconography.
+A modern restaurant website built with the latest Next.js 15, styled with Tailwind CSS, and enhanced with Swiper for smooth, responsive sliders and React Icons for appealing iconography.
 
 ## Table of Contents
 
