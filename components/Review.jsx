@@ -16,21 +16,21 @@ const foodItems = [
   },
   {
     image: '/profile.jpg',
-    name: 'Shohorab H Shawon',
+    name: 'Shohorab',
     location: 'Dhaka, Bangladesh',
     review:
       'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
   },
   {
     image: '/profile.jpg',
-    name: 'Shohorab H Shawon',
+    name: 'H Shawon',
     location: 'Dhaka, Bangladesh',
     review:
       'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
   },
   {
     image: '/profile.jpg',
-    name: 'Shohorab H Shawon',
+    name: 'Shawon',
     location: 'Dhaka, Bangladesh',
     review:
       'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
@@ -72,7 +72,7 @@ const Review = () => {
           <SwiperSlide key={index}>
             <div className="pt-8 px-8 col-span-1 flex flex-col justify-center space-y-4 ">
               <p className="font-medium text-xl">
-                <span className="text-4xl font-serif text-wrap">" </span>
+                <span className="text-4xl font-serif text-wrap">&quot;</span>
                 {item.review}
               </p>
               <div className="flex justify-between items-center pt-32">
