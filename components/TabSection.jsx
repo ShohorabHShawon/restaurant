@@ -6,11 +6,12 @@ import { MdOutlineWifiCalling3 } from 'react-icons/md';
 export default function TabSection() {
   const [activeTab, setActiveTab] = useState('About');
 
+  // Render content based on active tab
   const renderContent = () => {
     switch (activeTab) {
       case 'About':
         return (
-          <div className="">
+          <div>
             <h1 className="text-4xl font-bold text-black mb-4 uppercase">
               Exceptional culinary experience and delicious food
             </h1>
@@ -24,7 +25,7 @@ export default function TabSection() {
               adipisicing elit. Natus laborum dolores
             </p>
 
-            <div className="flex justify-start items-center">
+            <div className="flex justify-start items-center mt-6">
               <div className="py-6 pr-6">
                 <Link href="#about">
                   <button className="bg-[#FEBF00] text-black font-bold px-4 py-3">
@@ -32,10 +33,7 @@ export default function TabSection() {
                   </button>
                 </Link>
               </div>
-              <MdOutlineWifiCalling3
-                className="flex justify-center
-              items-center text-xl text-[#BD1F17]"
-              />
+              <MdOutlineWifiCalling3 className="flex justify-center items-center text-xl text-[#BD1F17]" />
               <p className="text-xl font-bold text-black">+8801812345678</p>
             </div>
           </div>
@@ -43,7 +41,7 @@ export default function TabSection() {
       case 'Experience':
         return (
           <div>
-            <h1 className="text-4xl font-bold text-black mb-2 uppercase">
+            <h1 className="text-4xl font-bold text-black mb-4 uppercase">
               Experience
             </h1>
             <p className="text-black">
@@ -62,7 +60,7 @@ export default function TabSection() {
       case 'Contact':
         return (
           <div>
-            <h1 className="text-4xl font-bold text-black mb-2 uppercase">
+            <h1 className="text-4xl font-bold text-black mb-4 uppercase">
               Contact
             </h1>
             <p className="text-black">
@@ -91,8 +89,8 @@ export default function TabSection() {
             onClick={() => setActiveTab(tab)}
             className={`py-2 px-4 transition-colors ${
               activeTab === tab
-                ? ' bg-[#BD1F17] text-white font-semibold'
-                : 'text-gray-900 hover:text-White'
+                ? 'bg-[#BD1F17] text-white font-semibold'
+                : 'text-gray-900 hover:text-white'
             }`}
           >
             {tab}

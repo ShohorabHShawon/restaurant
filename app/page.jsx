@@ -8,6 +8,8 @@ import FoodMenuSlider from '@/components/FoodMenuSlider';
 import { IoMdTime } from 'react-icons/io';
 import { MdOutlineWifiCalling3, MdEmail } from 'react-icons/md';
 import { IoLocation } from 'react-icons/io5';
+import BookingForm from '@/components/BookingForm';
+import SocialMedia from '@/components/SocialMedia';
 
 export default function Home() {
   return (
@@ -48,17 +50,19 @@ export default function Home() {
 
       {/* About  */}
       <section id="about">
+        {/* prop image
+        <div className="absolute -right-80 hidden xl:block">
+          <Image
+            src="/cap2.png"
+            alt="Hero Image"
+            width={500}
+            height={500}
+            className=""
+          />
+        </div> */}
+        <div className="relative overflow-hidden"></div>
         <div className="flex justify-center items-center my-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl justify-center items-center">
-            <div className="absolute -right-80 hidden xl:block">
-              <Image
-                src="/cap2.png"
-                alt="Hero Image"
-                width={500}
-                height={500}
-                className=""
-              />
-            </div>
             <div className="object-cover w-full h-full">
               <Image
                 src="/about.png"
@@ -73,7 +77,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         {/* 3 icons */}
         <div className="flex justify-center items-center mb-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-black gap-4 max-w-7xl w-full">
@@ -110,6 +113,7 @@ export default function Home() {
 
       {/* Menu  */}
       <section id="menu" className="bg-[#FBF7F2] py-20">
+        {/* prop image  */}
         <div className="absolute -left-72 hidden xl:block">
           <Image
             src="/cap.png"
@@ -137,7 +141,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Form  */}
       {/* Contact Form */}
       <section
         id="contact"
@@ -243,19 +246,24 @@ export default function Home() {
               ></textarea>
             </div>
 
-            {/* Submit Button */}
-            <button
-              type="submit"
-              className="bg-[#FEBF00] text-black p-3 font-bold hover:bg-gray-200 transform duration-300 ease-in-out"
-            >
-              BOOK NOW
-            </button>
+            {/* Book Now Button */}
+            <BookingForm />
           </form>
         </div>
       </section>
 
       {/* Review Section */}
-      <section>
+      <section id="menu" className="bg-[#FBF7F2] py-20">
+        {/* prop image 
+        <div className="absolute right-32 hidden xl:block">
+          <Image
+            src="/lettuce.png"
+            alt="Hero Image"
+            width={300}
+            height={500}
+            className=""
+          />
+        </div> */}
         <div className="flex justify-center items-center">
           <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 max-w-7xl px-4">
             <div className="col-span-1 sm:col-span-2 md:col-span-2">
@@ -332,38 +340,50 @@ export default function Home() {
       </section>
 
       {/* Footer  */}
-      <section className="bg-[#BD1F17] text-white text-center py-4" id="footer">
-        <h1 className="text-4xl font-semibold p-6 m-5">
-          WE READY TO HAVE YOU THE BEST DINING EXPERIENCES
-        </h1>
-        <div className="flex justify-center items-center">
-          <div>
-            <IoMdTime />
-            <h1>OPENING HOURS</h1>
-            <p>Monday-Sunday</p>
-            <p>9:00 AM to 11:30 PM</p>
-          </div>
-          <div>
-            <MdOutlineWifiCalling3 />
-            <h1>LET'S TALK</h1>
-            <p>Phone: +880181234567</p>
-            <p>Email: shohorabhahwon@gmail.com</p>
-          </div>
-          <div>
-            <MdEmail />
-            <h1>BOOK A TABLE</h1>
-            <p>Phone: +880181234567</p>
-            <p>Email: shohorabhahwon@gmail.com</p>
-          </div>
-          <div>
-            <IoLocation />
-            <h1>OUR ADDRESS</h1>
-            <p>Uttara, Dhaka</p>
-            <p>Sector 7</p>
-          </div>
-        </div>
+      <section className="relative text-white text-center py-24 px-4 sm:px-6 lg:px-8 bg-[url('/formbg.png')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-black opacity-60"></div>
 
-        <p className="text-xl">© 2021 All Rights Reserved</p>
+        <div className="relative z-10">
+          <h1 className="text-3xl md:text-4xl font-semibold px-4 md:px-0 mb-8">
+            WE'RE READY TO GIVE YOU THE BEST DINING EXPERIENCE
+          </h1>
+
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 max-w-4xl mx-auto mb-8">
+            <div className="flex flex-col items-center text-center space-y-2">
+              <IoMdTime className="text-3xl md:text-4xl mb-1 text-[#FEBF00]" />
+              <h2 className="text-lg md:text-xl font-semibold">
+                OPENING HOURS
+              </h2>
+              <p>Monday-Sunday</p>
+              <p>9:00 AM to 11:30 PM</p>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-2">
+              <MdOutlineWifiCalling3 className="text-3xl md:text-4xl mb-1 text-[#FEBF00]" />
+              <h2 className="text-lg md:text-xl font-semibold">LET'S TALK</h2>
+              <p>Phone: +880181234567</p>
+              <p>Email: shohorabhahwon@gmail.com</p>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-2">
+              <MdEmail className="text-3xl md:text-4xl mb-1 text-[#FEBF00]" />
+              <h2 className="text-lg md:text-xl font-semibold">BOOK A TABLE</h2>
+              <p>Phone: +880181234567</p>
+              <p>Email: shohorabhahwon@gmail.com</p>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-2">
+              <IoLocation className="text-3xl md:text-4xl mb-1 text-[#FEBF00]" />
+              <h2 className="text-lg md:text-xl font-semibold">OUR ADDRESS</h2>
+              <p>Uttara, Dhaka</p>
+              <p>Sector 7</p>
+            </div>
+          </div>
+          <div>
+            <SocialMedia />
+          </div>
+          <p className="text-md md:text-lg mt-4">© 2024 All Rights Reserved</p>
+        </div>
       </section>
     </div>
   );
