@@ -12,7 +12,7 @@ export default function TabSection() {
       case 'About':
         return (
           <div>
-            <h1 className="text-4xl text-black mb-4 uppercase font-mono font-extrabold">
+            <h1 className="text-4xl text-black mb-4 uppercase font-bebas font-semibold">
               Exceptional culinary experience and delicious food
             </h1>
             <p className="text-black">
@@ -41,7 +41,7 @@ export default function TabSection() {
       case 'Experience':
         return (
           <div>
-            <h1 className="text-4xl font-bold text-black mb-4 uppercase font-mono">
+            <h1 className="text-4xl font-bold text-black mb-4 uppercase font-bebas font-semibold">
               Experience
             </h1>
             <p className="text-black">
@@ -60,7 +60,7 @@ export default function TabSection() {
       case 'Contact':
         return (
           <div>
-            <h1 className="text-4xl font-bold text-black mb-4 uppercase font-mono font-extrabold">
+            <h1 className="text-4xl font-bold text-black mb-4 uppercase font-bebas font-semibold">
               Contact
             </h1>
             <p className="text-black">

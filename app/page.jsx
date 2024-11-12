@@ -23,7 +23,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-6 max-w-7xl justify-center items-center">
           <div className="col-span-4 items-center text-center lg:text-start z-20 mb-6">
             <div>
-              <h1 className="font-mono font-black text-white text-3xl sm:text-5xl md:text-[66px] lg:text-[78px] bg-[#BD1F17] bg-opacity-60">
+              <h1 className="font-bebas font-medium text-white text-3xl sm:text-5xl md:text-[66px] lg:text-8xl bg-[#BD1F17] bg-opacity-60">
                 TASTE THE AUTHENTIC SAUDI CUISINE
               </h1>
               <p className="text-white text-xl sm:text-xl md:text-2xl lg:text-3xl my-9">
@@ -103,7 +103,7 @@ export default function Home() {
             <div className="flex items-center space-x-4 ml-8">
               <MdDeliveryDining className="shadow-lg rounded-full p-6 text-8xl text-[#BD1F17]" />
               <div className="text-left">
-                <h1 className="text-3xl text-black px-2 font-mono font-extrabold">
+                <h1 className="text-3xl text-black px-2 font-bebas font-semibold">
                   FAST DELIVERY
                 </h1>
                 <p className="px-2">Within 30 Minutes</p>
@@ -112,7 +112,7 @@ export default function Home() {
             <div className="flex items-center space-x-4 ml-8">
               <FaAward className="shadow-lg rounded-full p-6 text-8xl text-[#BD1F17]" />
               <div className="text-left">
-                <h1 className="text-3xl text-black px-2 font-mono font-extrabold">
+                <h1 className="text-3xl text-black px-2 font-bebas font-semibold">
                   ABSOLUTE DINING
                 </h1>
                 <p className="px-2">Best buffet restaurant</p>
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="flex items-center space-x-4 ml-8">
               <PiShoppingBagOpenFill className="shadow-lg rounded-full p-6 text-8xl text-[#BD1F17]" />
               <div className="text-left">
-                <h1 className="text-3xl text-black px-2 font-mono font-extrabold">
+                <h1 className="text-3xl text-black px-2 font-bebas font-semibold">
                   PICKUP DELIVERY
                 </h1>
                 <p className="px-2">Grab your food order</p>
@@ -146,10 +146,10 @@ export default function Home() {
         <div className="flex justify-center items-center">
           <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 max-w-7xl">
             <div className="col-span-1 sm:col-span-2 md:col-span-2">
-              <p className="text-[#BD1F17] font-bold text-center sm:text-left">
+              <p className="text-[#BD1F17] font-semibold text-center sm:text-left">
                 🍕 Crispy, Every Bite Taste
               </p>
-              <h1 className="text-3xl lg:text-4xl font-mono font-black text-black my-2 text-center sm:text-left ">
+              <h1 className="text-3xl lg:text-4xl font-bebas font-semibold text-black my-2 text-center sm:text-left ">
                 POPULAR FOOD ITEMS
               </h1>
             </div>
@@ -174,10 +174,10 @@ export default function Home() {
           <form className="bg-transparent p-6 w-full max-w-lg space-y-6 z-20">
             {/* Title and Subtitle */}
             <div className="text-white text-center md:text-left space-y-2">
-              <p className="text-[#BD1F17] font-bold text-lg sm:text-xl">
+              <p className="text-[#BD1F17] font-semibold text-lg sm:text-xl">
                 🍕 BOOK NOW
               </p>
-              <h1 className="text-2xl sm:text-4xl font-mono font-black">
+              <h1 className="text-2xl sm:text-4xl font-bebas font-semibold">
                 BOOK YOUR TABLE
               </h1>
               <p className="text-base sm:text-lg">
@@ -287,10 +287,10 @@ export default function Home() {
         <div className="flex justify-center items-center">
           <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 max-w-7xl px-4">
             <div className="col-span-1 sm:col-span-2 md:col-span-2">
-              <p className="text-[#BD1F17] font-bold text-center sm:text-left">
+              <p className="text-[#BD1F17] font-semibold text-center sm:text-left">
                 🍕 Crispy, Every Bite Taste
               </p>
-              <h1 className="uppercase text-3xl sm:text-4xl font-black text-black my-2 text-center sm:text-left font-mono">
+              <h1 className="uppercase text-3xl sm:text-4xl font-semibold text-black my-2 text-center sm:text-left font-bebas">
                 What Some of my Customers Say
               </h1>
             </div>
@@ -335,7 +335,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-80"></div>
 
         <div className="relative z-10">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black font-mono px-4 md:px-0 mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-bebas px-4 md:px-0 mb-8">
             WE ARE READY TO GIVE YOU THE BEST DINING EXPERIENCE
           </h1>
 
