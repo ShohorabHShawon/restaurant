@@ -12,7 +12,7 @@ function SocialMedia() {
           href="https://www.facebook.com/shohorab.swn/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-3xl hover:text-blue-700 border-2 rounded-full border-gray-400 p-4"
+          className="text-3xl hover:text-[#FEBF00] border-2 rounded-full border-gray-400 p-4"
         >
           <FaFacebookF />
         </a>
@@ -20,7 +20,7 @@ function SocialMedia() {
           href="https://www.linkedin.com/in/shohorabhshawon/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-3xl hover:text-blue-700 border-2 rounded-full border-gray-400 p-4"
+          className="text-3xl hover:text-[#FEBF00] border-2 rounded-full border-gray-400 p-4"
         >
           <FaLinkedinIn />
         </a>
@@ -28,7 +28,7 @@ function SocialMedia() {
           href="https://x.com/Shohorab_Swn"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-3xl hover:text-blue-700 border-2 rounded-full border-gray-400 p-4"
+          className="text-3xl hover:text-[#FEBF00] border-2 rounded-full border-gray-400 p-4"
         >
           <FaTwitter />
         </a>
