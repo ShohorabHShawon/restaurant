@@ -58,16 +58,6 @@ export default function Home() {
 
       {/* About  */}
       <section id="about">
-        {/* prop image
-        <div className="absolute -right-80 hidden xl:block">
-          <Image
-            src="/cap2.png"
-            alt="Hero Image"
-            width={500}
-            height={500}
-            className=""
-          />
-        </div> */}
         <div className="relative overflow-hidden"></div>
         <div className="flex justify-center items-center my-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl justify-center items-center">
@@ -274,16 +264,6 @@ export default function Home() {
 
       {/* Review Section */}
       <section id="review" className="bg-[#FBF7F2] py-20">
-        {/* prop image 
-        <div className="absolute right-32 hidden xl:block">
-          <Image
-            src="/lettuce.png"
-            alt="Hero Image"
-            width={300}
-            height={500}
-            className=""
-          />
-        </div> */}
         <div className="flex justify-center items-center">
           <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 max-w-7xl px-4">
             <div className="col-span-1 sm:col-span-2 md:col-span-2">
@@ -353,14 +333,14 @@ export default function Home() {
               <MdOutlineWifiCalling3 className="text-3xl md:text-4xl mb-1 text-[#FEBF00]" />
               <h2 className="text-lg md:text-xl font-semibold">LETS TALK</h2>
               <p>Phone: +880181234567</p>
-              <p>Email: shohorabhahwon@gmail.com</p>
+              <p>Email: shohorabhshawon@gmail.com</p>
             </div>
 
             <div className="flex flex-col items-center text-center space-y-2">
               <MdEmail className="text-3xl md:text-4xl mb-1 text-[#FEBF00]" />
               <h2 className="text-lg md:text-xl font-semibold">BOOK A TABLE</h2>
               <p>Phone: +880181234567</p>
-              <p>Email: shohorabhahwon@gmail.com</p>
+              <p>Email: shohorabhshawon@gmail.com</p>
             </div>
 
             <div className="flex flex-col items-center text-center space-y-2">
