@@ -18,7 +18,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="bg-gradient-to-r from-[#BD1F17] to-[#A51D13] h-screen flex justify-center items-center mx-auto overflow-hidden"
+        className="bg-gradient-to-r from-[#BD1F17] to-[#A51D13] h-screen flex justify-center items-center lg:px-12 mx-auto overflow-hidden"
       >
         <div className="grid grid-cols-1 lg:grid-cols-6 max-w-7xl justify-center items-center">
           <div className="col-span-4 items-center text-center lg:text-start z-20 mb-6">
@@ -60,7 +60,7 @@ export default function Home() {
       <section id="about">
         <div className="relative overflow-hidden"></div>
         <div className="flex justify-center items-center my-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl justify-center items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl justify-center items-center lg:mx-10">
             <div className="object-cover w-full h-full">
               {/* Main Image Container */}
               <div className="relative">
