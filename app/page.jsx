@@ -18,12 +18,12 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="bg-gradient-to-r from-[#BD1F17] to-[#A51D13] h-screen flex justify-center items-center lg:px-12 mx-auto overflow-hidden"
+        className="bg-gradient-to-r min-h-screen from-[#BD1F17] to-[#A51D13] flex justify-center items-center lg:px-12 mx-auto overflow-hidden sm:py-28"
       >
         <div className="grid grid-cols-1 lg:grid-cols-6 max-w-7xl justify-center items-center">
           <div className="col-span-4 items-center text-center lg:text-start z-20 mb-6">
             <div>
-              <h1 className="font-bebas font-medium text-white text-3xl sm:text-5xl md:text-[66px] lg:text-8xl bg-[#BD1F17] bg-opacity-60">
+              <h1 className="font-bebas font-medium text-white text-3xl sm:text-5xl md:text-[66px] lg:text-8xl 2xl:text-9xl lg:bg-[#BD1F17] lg:bg-opacity-60">
                 TASTE THE AUTHENTIC SAUDI CUISINE
               </h1>
               <p className="text-white text-xl sm:text-xl md:text-2xl lg:text-3xl my-9">
