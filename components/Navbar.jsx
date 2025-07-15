@@ -19,7 +19,7 @@ function Navbar() {
       <nav className="flex justify-between items-center text-white max-w-7xl mx-auto px-4 py-2">
         <div className="flex items-center space-x-6">
           <Image src="/logo.svg" alt="Logo" width={50} height={50} />
-          <Link href="#" className="text-3xl font-bold">
+          <Link href="/home" className="text-3xl font-bold">
             Restaurant
           </Link>
           <div className="space-x-6 hidden lg:flex">
